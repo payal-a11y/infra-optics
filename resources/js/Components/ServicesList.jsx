@@ -26,4 +26,5 @@ export default function ServicesList({ services = [] }) {
             ))}
         </div>
     );
+    
 }
