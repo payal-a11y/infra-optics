@@ -2,42 +2,44 @@
 
 @section('content')
 <div class="card">
-    <div class="card-header">
-        <h4>Services page</h4>
+    <div class=" flex gap-6 items-center mb-[20px]">
+        <h4 class=" text-2xl">Services</h4>
+                <a href="{{ route('admin.services.create') }}" class="btn btn-primary mb-3 py-2 px-2 border-2 border-blue-950 bg-[#111827] text-white rounded-xl
+                ">
+            Add New Service
+        </a>
     </div>
 
     <div class="card-body">
-        <a href="{{ route('admin.services.create') }}" class="btn btn-primary mb-3">
-            Add New Service
-        </a>
 
-<table class="table table-bordered">
+
+<table class="table table-bordered border-collapse border border-gray-400">
     <thead>
-        <tr>
-            <th>Title</th>
+        <tr class="bg-gray-300 py-2 px-3 text-left">
+            <th class="p-[20px]">Title</th>
             <th>Intro</th>
             <th>Image</th>
-            <th width="180">Actions</th>
+            <th class="p-[20px]">Actions</th>
         </tr>
     </thead>
     <tbody>
         @foreach($services as $service)
             <tr>
-                <td>{{ $service->title }}</td>
-                <td>{{ $service->intro }}</td>
-                <td>
+                <td class=" font-bold p-[20px]">{{ $service->title }}</td>
+                <td class="w-5xl">{{ $service->intro }}</td>
+                <td class=" w-32">
                     @if($service->image)
-                        <img src="{{ asset('storage/' . $service->image) }}" width="80">
+                        <img src="{{ asset('storage/' . $service->image) }}" width="120">
                     @else
                         No Image
                     @endif
                 </td>
 
-                <td>
+                <td class="justify-items-end">
                     <!-- EDIT BUTTON -->
                     <a href="{{ route('admin.services.edit', $service->id) }}"
                        class="btn btn-sm btn-primary">
-                        Edit
+                       <i class="fa-regular fa-pen-to-square text-green-600 "></i>
                     </a>
 
                     <!-- DELETE BUTTON -->
@@ -50,7 +52,7 @@
                         @method('DELETE')
 
                         <button type="submit" class="btn btn-sm btn-danger">
-                            Delete
+                           <i class="fa-regular fa-circle-xmark text-red-600"></i>
                         </button>
                     </form>
                 </td>

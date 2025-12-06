@@ -5,9 +5,12 @@
 </head>
 <body>
 
-<h1>All Services</h1>
+<div class=" flex">
+    <h1>All Services</h1>
 
 <a href="{{ route('admin.services.create') }}">Add New Service</a>
+</div>
+
 
 <table border="1" cellpadding="10">
     <tr>

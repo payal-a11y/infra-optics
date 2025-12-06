@@ -3,12 +3,12 @@
 @section('content')
 <div class="card">
     <div class="card-header">
-        <h4>Media Library</h4>
+        <h4  class=" text-2xl">Media Library</h4>
     </div>
 
     <div class="card-body">
 
-        <div class="row">
+        <div class="row grid grid-cols-3">
             @foreach($files as $file)
                 <div class="col-md-3 text-center mb-4">
 
@@ -17,10 +17,10 @@
                         <img src="{{ asset('storage/' . $file) }}" class="img-fluid">
                     </div>
 
-                    {{-- File Path --}}
+                    <!-- {{-- File Path --}}
                     <div class="small text-muted mt-1">
                         {{ $file }}
-                    </div>
+                    </div> -->
 
                     {{-- Delete Button --}}
                     <form action="{{ route('admin.media.delete') }}" method="POST" class="mt-2">

@@ -7,6 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.cdnfonts.com/css/hoosoe-lro" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('admin/css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 
     <style>
         body { font-family: 'Hoosoe LRO', sans-serif; }
@@ -18,13 +20,13 @@
     <aside class="w-1/5 bg-gray-900 text-white flex flex-col">
         <!-- Project Name / Logo -->
         <div class="p-6 text-center border-b border-gray-700">
-            <h1 class="text-2xl font-bold">InfraOptics</h1>
+            <h1 class="text-2xl font-bold text-left">InfraOptics</h1>
         </div>
 
         <!-- Navigation -->
 <nav class="flex-1 mt-6">
-    <ul>
-        <li class="px-6 py-3 hover:bg-gray-800">
+    <ul class="text-[18px]">
+        <li class="px-6 py-3 hover:bg-gray-800 ">
             <a href="{{ route('admin.dashboard') }}">Dashboard</a>
         </li>
 
