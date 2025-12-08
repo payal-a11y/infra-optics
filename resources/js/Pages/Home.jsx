@@ -3,6 +3,7 @@ import FrontendLayout from "../Layouts/FrontendLayout";
 import Banner from "../Components/Banner";
 import ServicesList from "../Components/ServicesList";
 import { usePage } from "@inertiajs/react";
+import ContactUs from "@/Components/ContactUs";
 
 export default function Home({ services }) {
     return (
@@ -15,6 +16,7 @@ export default function Home({ services }) {
             </div>
 
             <ServicesList services={services} />
+            <ContactUs/>
         </FrontendLayout>
     );
 }
