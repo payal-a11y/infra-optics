@@ -2,6 +2,7 @@ import React from "react";
 import infralogo from "../../../public/images/infralogo.png";
 import location from "../../../public/images/location.svg";
 import clock from "../../../public/images/clock.svg";
+import Floatingicons from "./FloatingIcons";
 
 export default function Footer() {
     return (
@@ -109,11 +110,12 @@ export default function Footer() {
                 {/* Copyright */}
                 
             </div>
-            <div className="mt-8 pt-4 border-t border-gray-800 text-center">
+            <div className="mt-8     pt-4 border-t border-gray-800 text-center">
                     <p className="text-lg">
                         Copyright © {new Date().getFullYear()} infraoptics• All rights reserved
                     </p>
                 </div>
+                <Floatingicons />
         </footer>
     );
 }
