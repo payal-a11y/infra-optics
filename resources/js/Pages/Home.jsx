@@ -7,9 +7,12 @@ import ContactUs from "@/Components/ContactUs";
 import About from "@/Components/About";
 import Partners from "@/Components/Partners";
 import Solutions from "@/Components/Solutions";
+import  "../../css/custom.css";
+import Footer from "@/Components/Footer";
 
 export default function Home({ services }) {
     return (
+        <>
         <FrontendLayout>
             <Banner />
             <About />
@@ -23,6 +26,9 @@ export default function Home({ services }) {
 
             <ServicesList services={services} />
             <ContactUs />
+            
         </FrontendLayout>
+        <Footer/>
+        </>
     );
 }

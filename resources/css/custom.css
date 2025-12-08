@@ -1,0 +1,15 @@
+.animate-growloop {
+  animation: growloop 1.5s ease-in-out infinite;
+}
+
+@keyframes growloop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

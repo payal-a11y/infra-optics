@@ -23,6 +23,7 @@
     "dependencies": {
         "@inertiajs/react": "^2.2.18",
         "axios": "^1.6.0",
-        "flowbite": "^4.0.1"
+        "flowbite": "^4.0.1",
+        "react-scroll": "^1.9.3"
     }
 }
