@@ -23,7 +23,7 @@ export default function Services() {
     ];
 
     return (
-        <div className="max-w-6xl mx-auto px-5 pb-16 grid md:grid-cols-3 gap-8">
+        <div className=" max-w-screen-xl mx-auto px-5 pb-16 grid lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 gap-8">
             {services.map((service) => (
                 <div key={service.id} className="shadow-lg rounded-lg overflow-hidden ">
                     <img src={service.image} className="w-full h-48 object-cover" />

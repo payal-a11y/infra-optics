@@ -1,6 +1,6 @@
 export default function ServicesList({ services = [] }) {
     return (
-        <div className="max-w-6xl mx-auto px-5 pb-16 grid md:grid-cols-3 gap-8">
+        <div className="max-w-screen-xl mx-auto px-5 pb-16 grid  xl:grid-cols-3 lg:grid-cols-2  md:grid-cols-1  gap-8">
             {services.map((service) => (
                 <div
                     key={service.id}

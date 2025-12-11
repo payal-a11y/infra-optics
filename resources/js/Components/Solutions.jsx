@@ -10,7 +10,7 @@ export default function Solutions() {
         <img src={fibre} alt='' className='mt-12' />
         
         <h2 className='text-[28px] md:text-[48px] font-bold text-center mt-6'>Your Solutions to Fibre Optic Connectivity</h2>
-        <div className='grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1  xl:grid-cols-3 text-center mt-12 '>
+        <div className='grid  md:grid-cols- sm:grid-cols-1  xl:grid-cols-3 text-center mt-12 '>
           <div>
             <p className='flex items-center justify-start xl:justify-center md:justify-start lg:justify-center sm:justify-start gap-3 mb-4 w-[92%]'><span><img src={shield} alt='' className='' /></span>Expert Installation</p>
           </div>
