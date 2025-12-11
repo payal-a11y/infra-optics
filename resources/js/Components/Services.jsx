@@ -25,11 +25,11 @@ export default function Services() {
     return (
         <div className="max-w-6xl mx-auto px-5 pb-16 grid md:grid-cols-3 gap-8">
             {services.map((service) => (
-                <div key={service.id} className="shadow-lg rounded-lg overflow-hidden">
+                <div key={service.id} className="shadow-lg rounded-lg overflow-hidden ">
                     <img src={service.image} className="w-full h-48 object-cover" />
                     <div className="p-5 text-center">
                         <h3 className="text-xl font-semibold">{service.name}</h3>
-                        <p className="text-gray-600 mt-2">{service.intro}</p>
+                        <p className=" mt-2">{service.intro}</p>
                     </div>
                 </div>
             ))}

@@ -4,7 +4,7 @@ export default function ServicesList({ services = [] }) {
             {services.map((service) => (
                 <div
                     key={service.id}
-                    className="shadow-lg rounded-lg overflow-hidden bg-white"
+                    className="shadow-lg rounded-lg overflow-hidden bg-white hover:bg-[#e42e37] hover:text-[#fff] duration-300 hover:scale-105"
                 >
                     {service.image && (
                         <img
@@ -18,7 +18,7 @@ export default function ServicesList({ services = [] }) {
                         <h3 className="text-xl font-semibold">
                             {service.title}
                         </h3>
-                        <p className="text-gray-600 mt-2">
+                        <p className=" mt-2">
                             {service.intro}
                         </p>
                     </div>

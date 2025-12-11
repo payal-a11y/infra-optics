@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
 .animate-growloop {
   animation: growloop 1.5s ease-in-out infinite;
 }
@@ -13,3 +14,84 @@
     transform: scale(1);
   }
 }
+body {
+    font-family: "Manrope", sans-serif;
+    color: #292929;
+}
+button {
+    font-family: "Manrope", sans-serif;
+}
+input::placeholder, textarea::placeholder {
+    color: #292929;
+}
+input:focus-visible {
+    outline: 0;
+}
+textarea:focus-visible {
+    outline: 0;
+}
+
+@keyframes growloop {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-growloop {
+  animation: growloop 1.5s ease-in-out infinite;
+}
+@keyframes letterFly {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) rotate(10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}
+
+.fly-letters span {
+  display: inline-block;
+  opacity: 0;
+  animation: letterFly 0.6s ease-out forwards;
+}
+
+.fly-letters span:nth-child(1) { animation-delay: 0.05s; }
+.fly-letters span:nth-child(2) { animation-delay: 0.1s; }
+.fly-letters span:nth-child(3) { animation-delay: 0.15s; }
+.fly-letters span:nth-child(4) { animation-delay: 0.2s; }
+.fly-letters span:nth-child(5) { animation-delay: 0.25s; }
+.fly-letters span:nth-child(6) { animation-delay: 0.3s; }
+.fly-letters span:nth-child(7) { animation-delay: 0.35s; }
+.fly-letters span:nth-child(8) { animation-delay: 0.4s; }
+.fly-letters span:nth-child(9) { animation-delay: 0.45s; }
+.fly-letters span:nth-child(10) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(11) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(12) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(13) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(14) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(15) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(16) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(17) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(18) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(19) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(20) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(21) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(22) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(23) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(24) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(25) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(26) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(27) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(28) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(29) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(30) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(31) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(32) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(33) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(34) { animation-delay: 0.5s; }
+.fly-letters span:nth-child(35) { animation-delay: 0.5s; }
