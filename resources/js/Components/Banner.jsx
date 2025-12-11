@@ -3,7 +3,7 @@ import React from "react";
 export default function Banner() {
     return (
         <div
-            className="w-full h-[100vh] bg-cover bg-center flex items-center justify-center text-black"
+            className="w-full h-[70vh] md:h-[100vh] bg-cover bg-center flex items-center justify-center text-black"
             style={{
                 backgroundImage: "url('/images/bannerhero.png')"
             }}
